@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Startsida</title>
+		<meta charset="utf-8">
+		<link href="/static/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Min filmsamling</h1>
+		<ul>
+			% for movie in movies:
+			<li>{{ movie }}</li>
+			% end
+		</ul>
+		<p>
+			<a href="/add_movie">Lägg till en film</a>
+		</p>
+	</body>
+</html>

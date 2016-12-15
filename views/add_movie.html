@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Startsida</title>
+		<meta charset="utf-8">
+		<link href="/static/style.css" rel="stylesheet">
+	</head>
+	<body>
+		<h1>Lägg till en film</h1>
+		<form action="/save_movie" method="POST">
+			<label for="add-movie">Titel på film</label>
+			<input type="text" id="add-movie" name="title">
+			<input type="submit" value="Spara film">
+		</form>
+	</body>
+</html>
